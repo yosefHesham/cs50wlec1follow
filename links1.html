@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Links</title>
+    <p><a href = "#section1"> Section1 </a> </p>
+  <p><a href = "#section2"> Section2 </a> </p>
+  <p><a href = "#section3"> Section3 </a> </p>
+
+    <h1 id = "section1"> Section1</h1>
+    <p>Very, very tiny quibble: While Touch-File conforms to the Verb-Noun naming convention of PS, Touch is not an "approved" verb (not that it's a significant requirement: msdn.microsoft.com/en-us/library/ms714428.aspx). File is fine, btw. I recommend the names Set-File or Set-LastWriteTime or, my favorite, Update-File. Also, I would recommend Add-Content $file $null instead of echo $null > $file. Finally, set an alias with Set-Alias touch Update-File if you want to keep using the command touch – Alan McBee M ay 25 '17 at 23:36
+Suggest adding this as the last line: New-Alias -Name Touch Touch-File – stimpy77 Oct 1 '19 at 4:33
+Nice, but it's better to use New-Item $file instead of echo $null > $file, because the latter will create a 2-byte file with the UTF-16LE BOM in Windows PowerShell (but no longer in PowerShell Core). – mklement0 Nov 5 '19 at 12:43
+This has a TOCTTOU race, the file could be created between the check and the action. – poizan42 Dec 27 '19 at 13:43</p>
+
+<h1 id = "section2"> Section2</h1>
+<p>Very, very tiny quibble: While Touch-File conforms to the Verb-Noun naming convention of PS, Touch is not an "approved" verb (not that it's a significant requirement: msdn.microsoft.com/en-us/library/ms714428.aspx). File is fine, btw. I recommend the names Set-File or Set-LastWriteTime or, my favorite, Update-File. Also, I would recommend Add-Content $file $null instead of echo $null > $file. Finally, set an alias with Set-Alias touch Update-File if you want to keep using the command touch – Alan McBee May 25 '17 at 23:36
+Suggest adding this as the last line: New-Alias -Name Touch Touch-File – stimpy77 Oct 1 '19 at 4:33
+Nice, but it's better to use New-Item $file instead of echo $null > $file, because the latter will create a 2-byte file with the UTF-16LE BOM in Windows PowerShell (but no longer in PowerShell Core). – mklement0 Nov 5 '19 at 12:43
+This has a TOCTTOU race, the file could be created between the check and the action. – poizan42 Dec 27 '19 at 13:43</p>
+
+<h1 id = "section2"> Section2</h1>
+<p>Very, very tiny quibble: While Touch-File conforms to the Verb-Noun naming convention of PS, Touch is not an "approved" verb (not that it's a significant requirement: msdn.microsoft.com/en-us/library/ms714428.aspx). File is fine, btw. I recommend the names Set-File or Set-LastWriteTime or, my favorite, Update-File. Also, I would recommend Add-Content $file $null instead of echo $null > $file. Finally, set an alias with Set-Alias touch Update-File if you want to keep using the command touch – Alan McBee May 25 '17 at 23:36
+Suggest adding this as the last line: New-Alias -Name Touch Touch-File – stimpy77 Oct 1 '19 at 4:33
+Nice, but it's better to use New-Item $file instead of echo $null > $file, because the latter will create a 2-byte file with the UTF-16LE BOM in Windows PowerShell (but no longer in PowerShell Core). – mklement0 Nov 5 '19 at 12:43
+This has a TOCTTOU race, the file could be created between the check and the action. – poizan42 Dec 27 '19 at 13:43</p>
+
+  </head>
+  <body>
+
+  </body>
+</html>
